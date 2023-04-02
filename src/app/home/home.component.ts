@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavigationService } from 'src/app/navigation.service';
+
 
 @Component({
   selector: 'app-home',
@@ -6,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  constructor (public navigation: NavigationService){}
 
 }

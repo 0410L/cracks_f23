@@ -1,2 +1,12 @@
-<h1>Historial Component</h1>
-<button (click)="goBack()">Retroceder</button>
+<div class="container">
+
+    <h1>Historial Component</h1>
+    <button (click)="goBack()">Retroceder</button>
+    <br>
+    <br>
+
+    <span *ngfor="let url of navigation.getHistory(); let i = index">
+        {{i}}={{url}}
+    </span>
+
+</div>

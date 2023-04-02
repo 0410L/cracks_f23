@@ -1,0 +1,16 @@
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.foot{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5;
+    z-index: 1;
+}
