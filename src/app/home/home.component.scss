@@ -14,15 +14,26 @@
   }
   
   .grid-item img {
-    height: 83.7vh;
+    height: 96vh;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: grayscale(100%);
   }
 
 
   .img-1 {
     img {
       position: relative;
-      right: 650px;
+      right: 600px;
+    }
+    
+    &:hover img {
+      transform: scale(1.1);
+      filter: grayscale(0%);
+    }
+  
+    &:hover ~ .grid-item img {
+      filter: grayscale(100%);
     }
   }
 
@@ -30,21 +41,51 @@
     img {
       position: relative;
     }
+
+    &:hover img {
+      transform: scale(1.2);
+      filter: grayscale(0%);
+    }
+  
+    &:hover ~ .grid-item img {
+      filter: grayscale(100%);
+    }
   }
 
   .img-3 {
     img {
       position: relative;
-      right: 450px;
+      right: 550px;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+      filter: grayscale(0%);
+    }
+  
+    &:hover ~ .grid-item img {
+      filter: grayscale(100%);
     }
   }
 
   .img-4 {
     img {
       position: relative;
-      right: 400px;
+      right: 500px;
     }
+
+    &:hover img {
+      transform: scale(1.2);
+      filter: grayscale(0%);
+    }
+  
+    &:hover ~ .grid-item img {
+      filter: grayscale(100%);
+    }
+
   }
+
+  
   
   @media (max-width: 1200px) {
     .grid-container {
@@ -53,7 +94,7 @@
     }
   }
   
-  @media (max-width: 630px) {
+  @media (max-width: 700px) {
     .grid-container {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(4, 1fr);

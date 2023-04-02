@@ -1,2 +1,19 @@
-<h1>Players Component</h1>
-<button (click)="goBack()">Retroceder</button>
+<div class="title">
+    <h3 class="text-center">Players Component</h3>
+</div>
+
+<div class="grid-container point">
+    <div class="grid-item photo bg-primary" style="justify-content: center;">
+        <img src="../assets/images/LEWAN_F23.webp">
+    </div>
+    <div class="grid-item cardfifa bg-warning">
+    </div>
+</div>
+
+<div class="text-center mt-1 mb-1">
+    <button class="btn btn-secondary btn-sm text-center"  style="justify-content: center;" (click)="goBack()">Retroceder</button>
+</div>
+
+<span *ngfor="let url of navigation.getHistory(); let i = index">
+    {{i}}={{url}}
+</span>
