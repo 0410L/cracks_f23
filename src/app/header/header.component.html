@@ -1,26 +1,28 @@
-<div class="grid-container bg-white pt-1 pb-1 borde">
- 
-    <div class="grid-item 1 logo">
-        <a class="col-auto" href="home" routerLink="/home">
-            <img src="../assets/FIFA_23_logo.png" alt="fifa" width="*" height="40">
-        </a>
-    </div>
+<div class="container-fluid bg-white pt-1 pb-1 borde p-2">
+    <div class="row">
 
+      <div class="col-auto">
+        <img src="../assets/FIFA_23_logo.png" alt="fifa" height="40">
+      </div>
 
-    <div class="grid-item 2 mt-2">
-        <div class="navigation text-end">
-        
-            <button class="btn btn-outline-secondary btn-sm" routerLink="historial">historial</button>
-            <button class="btn btn-outline-secondary btn-sm" routerLink="players">players</button>
-            <button class="btn btn-outline-secondary btn-sm" routerLink="video">video</button>
-            <!--<button (click)="navigation.goBack()">Back to {{navigation.getPreviousUrl}}</button>-->
+      <div class="col">
+        <div class="navigation text-center">
+            <button class="btn btn-outline-secondary btn-sm" routerLink="home/players/:id">players</button>
+            <button class="btn btn-outline-secondary btn-sm" routerLink="home/video/:id">video</button>
+            <button class="btn btn-outline-secondary btn-sm" routerLink="home/historial/:id">historial</button>
         </div>
+      </div>
+
+      <div class="col text-end">
+        <div class="dropdown">
+          <button class="fcb btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">{{"Idiomas"|translate}}</button>
+          <ul class="dropdown-menu fcb" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item text-center" (click)="switchSpain('es')">Castellano</a></li>
+            <li><a class="dropdown-item text-center" (click)="switchSpain('cat')">Català</a></li>
+            <li><a class="dropdown-item text-center" (click)="switchEnglish('en')">English</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
 </div>
-
-
-<span *ngfor="let url of navigation.getHistory(); let i = index">
-    {{i}}={{url}}
-</span>
 

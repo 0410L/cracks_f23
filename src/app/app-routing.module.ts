@@ -7,13 +7,14 @@ import { VideoComponent } from './video/video.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'players', component: PlayersComponent },
+  { path: 'home/players/:id', component: PlayersComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'historial', component: HistorialComponent },
-  { path: 'video', component: VideoComponent },
+  { path: 'home/historial/:id', component: HistorialComponent },
+  { path: 'home/video/:id', component: VideoComponent },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

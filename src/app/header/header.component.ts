@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-// import { NavigationService } from 'src/app/navigation.service';
+import { TranslateService } from '@ngx-translate/core';
+import { NavigationService } from 'src/app/navigation.service';
+import * as json from 'data.json';
 
 
 @Component({
@@ -9,10 +11,22 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+    constructor (private translateservice : TranslateService){
+    translateservice.setDefaultLang('es');
+  }
+
+  switchEnglish(language: string){
+    this.translateservice.use(language)
+  }
+
+  switchSpain(language: string){
+    this.translateservice.use(language)
+  }
+
+  switchCatala(language: string){
+    this.translateservice.use(language)
+  }
+
+  es = json;
+
 }
-
-
-// export class HeaderComponent {
-//   constructor (public navigation: NavigationService){}
-
-// }

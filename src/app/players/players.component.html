@@ -1,19 +1,66 @@
 <div class="title">
-    <h3 class="text-center">Players Component</h3>
+    <h3 class="text-center">Ficha Jugador</h3>
 </div>
 
 <div class="grid-container point">
-    <div class="grid-item photo bg-primary" style="justify-content: center;">
-        <img src="../assets/images/LEWAN_F23.webp">
+    <div class="grid-item photo" style="justify-content: center;">
+        {{id.url}}
+        <img src="../assets/images/{{onePlayer.url}}">
     </div>
-    <div class="grid-item cardfifa bg-warning">
-    </div>
+    <div class="grid-item cardfifa">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="rounded p-3">
+                  <h5>Información del jugador</h5>
+                  <ul>
+                    <li><strong>ID:</strong> {{ onePlayer.id }}</li>
+                    <li><strong>Nombre:</strong> {{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</li>
+                    <li><strong>Edad:</strong> {{ onePlayer.Edad }}</li>
+                    <li><strong>Nacionalidad:</strong> {{ onePlayer.Nacionalidad }}</li>
+                    <li><strong>Club actual:</strong> {{ onePlayer.Club_actual }}</li>
+                    <li><strong>Club anterior 1:</strong> {{ onePlayer.Club_anterior_1 }}</li>
+                    <li><strong>Club anterior 2:</strong> {{ onePlayer.Club_anterior_2 }}</li>
+                    <li><strong>Club anterior 3:</strong> {{ onePlayer.Club_anterior_3 }}</li>
+                    <li><strong>Club anterior 4:</strong> {{ onePlayer.Club_anterior_4 }}</li>
+                    <li><strong>Club anterior 5:</strong> {{ onePlayer.Club_anterior_5 }}</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="rounded p-3">
+                  <h5>Habilidades del jugador</h5>
+                  <ul>
+                    <li><strong>Aceleración:</strong> {{ onePlayer.Aceleracion }}</li>
+                    <li><strong>Velocidad:</strong> {{ onePlayer.Velocidad }}</li>
+                    <li><strong>Posición:</strong> {{ onePlayer.Posicion }}</li>
+                    <li><strong>Finalización:</strong> {{ onePlayer.Finalizacion }}</li>
+                    <li><strong>Potencia de tiro:</strong> {{ onePlayer.Potencia_de_tiro }}</li>
+                    <li><strong>Tiros lejanos:</strong> {{ onePlayer.Tiros_lejanos }}</li>
+                    <li><strong>Voleas:</strong> {{ onePlayer.Voleas }}</li>
+                    <li><strong>Penaltis:</strong> {{ onePlayer.Penaltis }}</li>
+                    <li><strong>Visión de juego:</strong> {{ onePlayer.Vision_de_juego }}</li>
+                    <li><strong>Centros:</strong> {{ onePlayer.Centros }}</li>
+                    <li><strong>Precisión tirando faltas:</strong> {{ onePlayer.Precision_tirando_faltas }}</li>
+                    <li><strong>Pases cortos:</strong> {{ onePlayer.Pases_cortos }}</li>
+                    <li><strong>Pases largos:</strong> {{ onePlayer.Pases_largos }}</li>
+                    <li><strong>Efecto:</strong> {{ onePlayer.Efecto }}</li>
+                    <li><strong>Agilidad:</strong> {{ onePlayer.Agilidad }}</li>
+                    <li><strong>Equilibrio:</strong> {{ onePlayer.Equilibrio }}</li>
+                    <li><strong>Reacción:</strong> {{ onePlayer.Reaccion }}</li>
+                    <li><strong>Control del balón:</strong> {{ onePlayer.Control_del_Balon }}</li>
+                    <li><strong>Regates:</strong> {{ onePlayer.Regates }}</li>
+                    <li><strong>Compostura:</strong> {{ onePlayer.Compostura }}</li>
+                  </ul>
+              </div>
+          </div>
+
+<div class="text-center mt-1 mb-2">
+    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">Retroceder</button>
+    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goNext()">Videos</button>
 </div>
 
-<div class="text-center mt-1 mb-1">
-    <button class="btn btn-secondary btn-sm text-center"  style="justify-content: center;" (click)="goBack()">Retroceder</button>
-</div>
 
-<span *ngfor="let url of navigation.getHistory(); let i = index">
+<!-- <span *ngfor="let url of navigation.getHistory(); let i = index">
     {{i}}={{url}}
-</span>
+</span> -->

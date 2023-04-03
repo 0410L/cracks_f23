@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-historial',
@@ -8,7 +10,7 @@ import { Location } from '@angular/common';
 })
 export class HistorialComponent {
 
-  constructor(private location: Location) { }
+  constructor(private location: Location, private router: Router) { }
 
   goBack() {
     this.location.back();

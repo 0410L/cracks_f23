@@ -1,27 +1,29 @@
 <div class="title">
-    <h3 class="text-center">Video Component</h3>
-</div>
+    <h3 class="text-center">Videos jugador</h3>
+</div> 
 
-<div class="video-grid">
-    <div class="video">
+<div class="grid-container">
+    <div class="grid-item video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/cm5wytys2Cg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <div class="video">
+    <div class="grid-item video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/rYZDAdYo00I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <div class="video">
+    <div class="grid-item video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/nWfitbySEbc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <div class="video">
+    <div class="grid-item video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/bO2Dhm0HwxI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   </div>
-  
+    
+
+  <div class="text-center mt-1 mb-2">
+    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">Retroceder</button>
+    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goNext()">Historial</button>
+  </div>
 
 
-<div class="text-center mt-1 mb-2">
-    <button class="btn btn-secondary btn-sm text-center"  style="justify-content: center;" (click)="goBack()">Retroceder</button>
-</div>
 
 <span *ngfor="let url of navigation.getHistory(); let i = index">
     {{i}}={{url}}

@@ -14,7 +14,7 @@
   }
   
   .grid-item img {
-    height: 96vh;
+    height: 100vh;
     object-fit: cover;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     filter: grayscale(100%);
@@ -24,7 +24,7 @@
   .img-1 {
     img {
       position: relative;
-      right: 600px;
+      right: 800px;
     }
     
     &:hover img {
@@ -55,7 +55,7 @@
   .img-3 {
     img {
       position: relative;
-      right: 550px;
+      right: 800px;
     }
 
     &:hover img {
@@ -71,7 +71,7 @@
   .img-4 {
     img {
       position: relative;
-      right: 500px;
+      right: 700px;
     }
 
     &:hover img {
@@ -86,6 +86,46 @@
   }
 
   
+
+  @media (max-width: 1920px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    .img-1 {
+    img {
+      position: relative;
+      right: 600px;
+    }
+ 
+  }
+
+  .img-2 {
+    img {
+      position: relative;
+    }
+
+  }
+
+  .img-3 {
+    img {
+      position: relative;
+      right: 550px;
+    }
+
+  }
+
+  .img-4 {
+    img {
+      position: relative;
+      right: 500px;
+    }
+
+  }
+  }
+
+
   
   @media (max-width: 1200px) {
     .grid-container {
