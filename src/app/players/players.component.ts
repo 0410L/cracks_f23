@@ -27,7 +27,7 @@ export class PlayersComponent {
     this.location.back();
   }
   goNext(){
-    // this.router.navigate(['home/video/:id'])
+    this.router.navigate(['home/video/'+(this.id)])
   }
 
 }
