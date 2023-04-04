@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { PlayersService } from '../players.service';
+import { Data } from '../interface.data';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -10,10 +12,21 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HistorialComponent {
 
-  constructor(private location: Location, private router: Router) { }
+  id : any;
+  onePlayer : any;
+
+  constructor(public location: Location, public router: Router, public route: ActivatedRoute, public playerService : PlayersService) {
+    this.route.params.subscribe(params => {this.id = params['id']});
+    console.log(this.id); 
+    this.onePlayer=this.playerService.getPlayerOne(this.id);
+    console.log(this.onePlayer)
+  }
+
 
   goBack() {
     this.location.back();
   }
 
+
 }
+

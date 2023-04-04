@@ -10,8 +10,20 @@
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     width: 100%;
-    height: 100%;
+    height: 50%;
   }
+
+  .row-container {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.row-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
 
   .escudo{
     
@@ -20,13 +32,12 @@
   }
 
   .grid-item.photo {
-    display: flex;
+
     justify-content: center;
     align-items: center;
   }
 
   .grid-item.equipo {
-    display: flex;
     justify-content: center;
     align-items: center;
   }

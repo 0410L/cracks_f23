@@ -15,7 +15,7 @@ export class PlayersComponent {
   id : any;
   onePlayer : any;
 
-  constructor(private location: Location, private router: Router, private route: ActivatedRoute, private playerService : PlayersService) {
+  constructor(public location: Location, public router: Router, public route: ActivatedRoute, public playerService : PlayersService) {
     this.route.params.subscribe(params => {this.id = params['id']});
     console.log(this.id);
 

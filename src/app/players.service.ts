@@ -54,15 +54,14 @@ export class PlayersService {
     Agresividad: 0,
     url: '',
     length: 0,
+    YoutubeVideo1: '',
+    YoutubeVideo2: '',
+    YoutubeVideo3: '',
+    YoutubeVideo4: ''
   };
 
   id: any;
   es = json;
-
-  // 1 = this.es.players.1;
-  // 2 = this.es.players.2;
-  // 3 = this.es.players.3;
-  // 4 = this.es.players.4;
 
   constructor(private http: HttpClient) {
     this.getPlayers();
@@ -82,9 +81,7 @@ export class PlayersService {
 
   getPlayerOne(id: any) {
     console.log(id);
-    // const test = this.players.find((player: any) => {
-    //   player.id == id;
-    // });
+   
     const test = this.players[id-1]
     console.log(test)
     return test;
@@ -135,7 +132,15 @@ export class PlayersService {
       Fuerza: '87',
       Agresividad: '81',
       photo:'LEWANDOSKI.png',
-
+      YoutubeVideo1:'Y7mdgvlTlmo',
+      YoutubeVideo2:'cm5wytys2Cg',
+      YoutubeVideo3:'bO2Dhm0HwxI',
+      YoutubeVideo4:'nWfitbySEbc',
+      escudo1:'FCB.png',
+      escudo2:'BAYERN.png',
+      escudo3:'DORTMUND.png',
+      escudo4:'LEGIA.png',
+      escudo5:'LECHPOZNAN.png',
       url: 'LEWAN_F23.webp',
     },
 
@@ -183,7 +188,15 @@ export class PlayersService {
       Fuerza: '52',
       Agresividad: '63',
       photo:'NEYMAR.png',
-
+      YoutubeVideo1:'K2csY1cMpfA',
+      YoutubeVideo2:'Dgm3nehX-n4',
+      YoutubeVideo3:'whezEvRiUL0',
+      YoutubeVideo4:'n4PzyhFYDAw',
+      escudo1:'PARIS.png',
+      escudo2:'FCB.png',
+      escudo3:'SANTOS.png',
+      escudo4:'',
+      escudo5:'',
       url: 'NEYMAR_F23.webp',
     },
 
@@ -231,7 +244,15 @@ export class PlayersService {
       Fuerza: '87',
       Agresividad: '81',
       photo:'JOAQUIN.png',
-
+      YoutubeVideo1:'DwVl6cQczQU',
+      YoutubeVideo2:'B8L-PE5ct5g',
+      YoutubeVideo3:'jjAyTqhZOLw',
+      YoutubeVideo4:'lhgOj5GD_z4',
+      escudo1:'BETIS.png',
+      escudo2:'FIORENTINA.png',
+      escudo3:'MALAGA.png',
+      escudo4:'VALENCIA.png',
+      escudo5:'BETIS.png',
       url: 'JOAQUIN_F23.webp',
     },
     {
@@ -278,7 +299,15 @@ export class PlayersService {
       Fuerza: '87',
       Agresividad: '81',
       photo:'GRIEZMANN.jpg',
-
+      YoutubeVideo1:'9cdV74dfxkU',
+      YoutubeVideo2:'dHhJRhZld94',
+      YoutubeVideo3:'3u1qeSBWHpI',
+      YoutubeVideo4:'JtuYdCAy1Y4',
+      escudo1:'ATLETICO.png',
+      escudo2:'FCB.png',
+      escudo3:'ATLETICO.png',
+      escudo4:'REALSOCIEDAD.png',
+      escudo5:'',
       url: 'GRIEZMANN_F23.webp',
     },
   ];
