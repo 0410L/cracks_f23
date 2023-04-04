@@ -11,7 +11,7 @@ import * as json from 'data.json';
 })
 export class HeaderComponent {
 
-    constructor (private translateservice : TranslateService){
+    constructor (public translateservice : TranslateService){
     translateservice.setDefaultLang('es');
   }
 

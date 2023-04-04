@@ -1,37 +1,50 @@
 <div class="title">
-    <h3 class="text-center">Historial Jugador</h3>
+    <h3 class="text-center">Historial <h2>{{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</h2></h3>
 </div>
 
-<div class="grid-container point">
-    <div class="grid-item photo" style="justify-content: center;">
-        <img src="..\assets\images\ROBERT_LEWANDOWSKI.webp">
+<div class="grid-container justify-content-center align-items-center">
+
+    <div class="grid-item" style="display: flex; justify-content: center; align-items: center;">
+        <img src="..\assets\images\{{ onePlayer.photo }}" width="350px" height="350px">
     </div>
-    <div class="grid-item datos equipo">
 
-        <div class="container p-5">
-            <div style="border: 1px solid black; border-radius: 10px; padding: 10px;">
-                <ul class="text-center" style="list-style: none; margin: 0; padding: 0; justify-content: center;">
-                    <li><img class="escudo" src="..\assets\images\FCB.png"><p></p>  F.C. Barcelona (2022-act)</li>
-                </ul>
-                <ul class="text-center" style="list-style: none; margin: 0; padding: 0; justify-content: center;">
-                    <li><img class="escudo" src="..\assets\images\BAYERN.png"><p></p> F.C. Bayern (2014-2022)</li>
-                </ul>
-                <ul class="text-center" style="list-style: none; margin: 0; padding: 0; justify-content: center;">
-                    <li><img class="escudo" src="..\assets\images\DORTMUND.png"><p></p> B. V. Borussia (2010-2014)</li>
-                </ul>
-                <ul class="text-center" style="list-style: none; margin: 0; padding: 0; justify-content: center;">
-                    <li><img class="escudo" src="..\assets\images\LECHPOZNAN.png"><p></p> Lech Poznań (2008-2010)</li>
-                </ul>
-                <ul class="text-center" style="list-style: none; margin: 0; padding: 0; justify-content: center;">
-                    <li><img class="escudo" src="..\assets\images\LEGIA.png"><p></p> Legia de Varsovia II (2005-2006)</li>
-                </ul>
+    <div class="grid-item datos equipo d-flex">
+        <div class="container p-5 text-center justify-content-center">
+                <div class="row-container pt-3" >
+                    <div class="text-center d-flex align-items-center" style="justify-content: center;">
+                        <img class="escudo" src="..\assets\images\{{onePlayer.escudo1}}" style="position: relative; top: -10px;">
+                        <p style="margin-left: 10px;">{{ onePlayer.Club_actual }}</p>
+                    </div>
+                </div>
+
+                <div class="row-container pt-3 text-center">
+                    <div class="text-center d-flex align-items-center" style="justify-content: center;">
+                        <img class="escudo" src="..\assets\images\{{onePlayer.escudo2}}" style="position: relative; top: -10px;">
+                        <p style="margin-left: 10px;">{{ onePlayer.Club_anterior_1 }}</p>
+                    </div>
+                </div>
+
+                <div class="row-container pt-3 text-center">
+                    <div class="text-center d-flex align-items-center" style="justify-content: center;">
+                        <img class="escudo" src="..\assets\images\{{onePlayer.escudo3}}" style="position: relative; top: -10px;">
+                        <p style="margin-left: 10px;">{{ onePlayer.Club_anterior_2 }}</p>
+                    </div>
+                </div>
+
+                <div class="row-container pt-3 text-center">
+                    <div class="text-center d-flex align-items-center" style="justify-content: center;">
+                        <img class="escudo" src="..\assets\images\{{onePlayer.escudo4}}" style="position: relative; top: -10px;">
+                        <p style="margin-left: 10px;">{{ onePlayer.Club_anterior_3 }}</p>
+                    </div>
+                </div>
+
+                <div class="row-container pt-3 text-center">
+                    <div class="text-center d-flex align-items-center" style="justify-content: center;">
+                        <img class="escudo" src="..\assets\images\{{onePlayer.escudo5}}" style="position: relative; top: -10px;">
+                        <p style="margin-left: 10px;">{{ onePlayer.Club_anterior_4 }}</p>
+                    </div>
+                </div>
             </div>
-
-        </div>
-    
-
-        
-        
     </div>
 </div>
 

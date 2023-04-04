@@ -60,10 +60,7 @@
          "Club_actual": "Paris Saint-Germain (2017-act)",
          "Club_anterior_1": "F.C. Barcelona (2013-2017)",
          "Club_anterior_2": "Santos F.C. (2009-2013)",
-         "Club_anterior_3": "",
-         "Club_anterior_4": "",
-         "Club_anterior_5": "",
-
+         
          "Aceleracion": "88",
          "Velocidad": "86",
          "Posicion": "86",
@@ -111,7 +108,6 @@
          "Club_anterior_2": "Málaga C. F. (2011-13)",
          "Club_anterior_3": "Valencia C. F. (2006-11)",
          "Club_anterior_4": "Real Betis Balompié (2000-06)",
-         "Club_anterior_5": "",
 
          "Aceleracion": "76",
          "Velocidad": "75",
@@ -159,8 +155,6 @@
          "Club_anterior_1": "F. C. Barcelona (2019-22)",
          "Club_anterior_2": "Atlético de Madrid (2014-19)",
          "Club_anterior_3": "Real Sociedad (2009-14)",
-         "Club_anterior_4": "",
-         "Club_anterior_5": "",
 
          "Aceleracion": "76",
          "Velocidad": "75",

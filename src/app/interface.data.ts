@@ -42,4 +42,8 @@ export interface Data {
     Fuerza: number;
     Agresividad: number;
     url: string;
+    YoutubeVideo1: string;
+    YoutubeVideo2: string;
+    YoutubeVideo3: string;
+    YoutubeVideo4: string;
 }

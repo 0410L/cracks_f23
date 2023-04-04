@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { PlayersService } from '../players.service';
 import { Data } from '../interface.data';
 import { TranslateService } from '@ngx-translate/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-video',
@@ -14,7 +15,7 @@ export class VideoComponent {
   id : any;
   onePlayer : any;
 
-  constructor(private location: Location, private router: Router, private route: ActivatedRoute, private playerService : PlayersService) {
+  constructor(public location: Location, public router: Router, public route: ActivatedRoute, public playerService : PlayersService, public sanitizer: DomSanitizer) {
     this.route.params.subscribe(params => {this.id = params['id']});
     console.log(this.id);
 

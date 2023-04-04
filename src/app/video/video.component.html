@@ -1,19 +1,19 @@
 <div class="title">
-    <h3 class="text-center">Videos jugador</h3>
-</div> 
+    <h3 class="text-center pb-2 italic">Videos <h2>{{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</h2></h3>
+</div>
 
 <div class="grid-container">
     <div class="grid-item video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cm5wytys2Cg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="100%" height="500" [src]="sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + onePlayer.YoutubeVideo1)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <div class="grid-item video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/rYZDAdYo00I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="100%" height="100%" [src]="sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + onePlayer.YoutubeVideo2)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <div class="grid-item video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/nWfitbySEbc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="100%" height="100%" [src]="sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + onePlayer.YoutubeVideo3)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <div class="grid-item video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bO2Dhm0HwxI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="100%" height="100%" [src]="sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + onePlayer.YoutubeVideo4)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   </div>
     
