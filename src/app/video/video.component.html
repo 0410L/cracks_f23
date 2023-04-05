@@ -1,5 +1,5 @@
 <div class="title">
-    <h3 class="text-center pb-2 italic">Videos <h2>{{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</h2></h3>
+    <h3 class="text-center pb-2 italic">{{"Videos"|translate}} <h2>{{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</h2></h3>
 </div>
 
 <div class="grid-container">
@@ -15,16 +15,17 @@
     <div class="grid-item video">
       <iframe width="100%" height="100%" [src]="sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + onePlayer.YoutubeVideo4)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-  </div>
-    
+</div>
 
-  <div class="text-center mt-1 mb-2">
-    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">Retroceder</button>
-    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goNext()">Historial</button>
-  </div>
+<div class="text-center mt-1 mb-2">
+  <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">{{"Retroceder"|translate}}</button>
+  <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goNext()">{{"Historial"|translate}}</button>
+</div>
+ 
 
-
-
+<br>
+<br>
 <span *ngfor="let url of navigation.getHistory(); let i = index">
     {{i}}={{url}}
 </span>
+

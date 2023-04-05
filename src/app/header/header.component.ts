@@ -27,6 +27,14 @@ export class HeaderComponent {
     this.translateservice.use(language)
   }
 
+  switchFrench(language: string){
+    this.translateservice.use(language)
+  }
+
+  switchJapanese(language: string){
+    this.translateservice.use(language)
+  }
+
   es = json;
 
 }

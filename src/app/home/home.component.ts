@@ -15,8 +15,22 @@ export class HomeComponent implements OnInit{
 
   @Input() item: any;
 
-  constructor (public navigation: NavigationService, private router: Router){}
-  
+  constructor (
+    public navigation: NavigationService,
+    private router: Router,
+    public translate: TranslateService)
+    {
+    
+      this.setAppLang();
+    
+    }
+
+    setAppLang():void{
+      this.translate.setDefaultLang('es');
+      this.translate.use(this.translate.getBrowserLang()!);
+    }
+
+
   ngOnInit(): void {};
 
 }

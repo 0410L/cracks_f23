@@ -5,25 +5,18 @@
         <img src="../assets/FIFA_23_logo.png" routerLink="home/" alt="fifa" height="40">
       </div>
 
-
-
       <div class="col text-end">
         <div class="dropdown">
           <button class="fcb btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">{{"Idiomas"|translate}}</button>
           <ul class="dropdown-menu fcb" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item text-center" (click)="switchSpain('es')">Castellano</a></li>
-            <li><a class="dropdown-item text-center" (click)="switchSpain('cat')">Català</a></li>
-            <li><a class="dropdown-item text-center" (click)="switchEnglish('en')">English</a></li>
+            <li><a class="dropdown-item text-center" (click)="switchCatala('cat')">Català</a></li>
+            <li><a class="dropdown-item text-center" (click)="switchEnglish('eng')">English</a></li>
+            <li><a class="dropdown-item text-center" (click)="switchFrench('fra')">French</a></li>
+            <li><a class="dropdown-item text-center" (click)="switchJapanese('jap')">にほんご</a></li>
           </ul>
         </div>
       </div>
-      <!-- <div class="col">
-        <div class="navigation text-center">
-            <button class="btn btn-outline-secondary btn-sm" routerLink="home/players/:id">players</button>
-            <button class="btn btn-outline-secondary btn-sm" routerLink="home/video/:id">video</button>
-            <button class="btn btn-outline-secondary btn-sm" routerLink="home/historial/:id">historial</button>
-        </div>
-      </div> -->
-    </div>
+   </div>
 </div>
 

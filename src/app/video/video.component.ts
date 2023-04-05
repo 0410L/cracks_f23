@@ -15,12 +15,27 @@ export class VideoComponent {
   id : any;
   onePlayer : any;
 
-  constructor(public location: Location, public router: Router, public route: ActivatedRoute, public playerService : PlayersService, public sanitizer: DomSanitizer) {
+  constructor(
+    public location: Location, 
+    public router: Router,
+    public route: ActivatedRoute,
+    public playerService : PlayersService,
+    public sanitizer: DomSanitizer,
+    public translate: TranslateService) {
+
     this.route.params.subscribe(params => {this.id = params['id']});
     console.log(this.id);
 
     this.onePlayer=this.playerService.getPlayerOne(this.id);
     console.log(this.onePlayer)
+
+    this.setAppLang();
+
+  }
+
+  setAppLang():void{
+    this.translate.setDefaultLang('es');
+    this.translate.use(this.translate.getBrowserLang()!);
   }
 
   goBack() {
