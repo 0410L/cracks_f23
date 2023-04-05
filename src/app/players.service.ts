@@ -9,7 +9,7 @@ import * as json from 'data.json';
   providedIn: 'root',
 })
 export class PlayersService {
-  private url = 'data.json';
+private url = 'data.json';
   public data: Data = {
     players: [],
     id: '0',
