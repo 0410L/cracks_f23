@@ -6,7 +6,10 @@ import { PlayersComponent } from './players/players.component';
 import { VideoComponent } from './video/video.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '',
+    redirectTo: 'home',
+    pathMatch: 'full' },
+
   { path: 'home/players/:id', component: PlayersComponent },
   { path: 'home', component: HomeComponent },
   { path: 'home/historial/:id', component: HistorialComponent },

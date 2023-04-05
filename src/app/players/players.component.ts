@@ -14,6 +14,8 @@ export class PlayersComponent {
   id : any;
   onePlayer : any;
 
+  // Players : Data[]=[];
+
   constructor(
     public location: Location,
     public router: Router,
@@ -21,6 +23,8 @@ export class PlayersComponent {
     public playerService : PlayersService,
     public translate: TranslateService) 
     {
+
+    // this.Players=playerService.getPlayers();
       
     this.route.params.subscribe(params => {this.id = params['id']});
     console.log(this.id);

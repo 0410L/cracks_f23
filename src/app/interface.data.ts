@@ -9,9 +9,9 @@ export interface Data {
     Clubactual: string;
     Clubanterior1: string;
     Clubanterior2: string;
-    Clubanterior3: string;
-    Clubanterior4: string;
-    Clubanterior5: string;
+    Clubanterior3?: string;
+    Clubanterior4?: string;
+    Clubanterior5?: string;
     Aceleracion: number;
     Velocidad: number;
     Posicion: number;
