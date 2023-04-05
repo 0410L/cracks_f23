@@ -4,33 +4,26 @@
 
 <div class="grid-container point">
     <div class="grid-item photo" style="justify-content: center;">
-        {{id.url}}
-        <img src="../assets/images/{{onePlayer.url}}">
+        <img src="../assets/images/{{onePlayer.url}}" style="max-width: 500px; max-height: 500px">
     </div>
     <div class="grid-item cardfifa">
         <div class="container ">
             <div class="row">
               <div class="col-md-6">
                 <div class="rounded p-3">
-                  <h5>{{"Información del jugador"|translate}}</h5>
+                  <h5>{{"Informaciondeljugador"|translate}}</h5>
                   <br>
                   <ul>
-                    <li><span><strong>{{"ID"}}:</strong> {{ onePlayer.id }}</span></li>
                     <li><strong>{{"Nombre"|translate}}:</strong> {{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</li>
                     <li><strong>{{"Edad"|translate}}:</strong> {{ onePlayer.Edad }}</li>
                     <li><strong>{{"Nacionalidad"|translate}}:</strong> {{ onePlayer.Nacionalidad }}</li>
                     <li><strong>{{"Clubactual"|translate}}:</strong> {{ onePlayer.Clubactual }}</li>
-                    <!-- <li><strong>{{"Clubanterior1"|translate}}:</strong> {{ onePlayer.Clubanterior1 }}</li>
-                    <li><strong>{{"Clubanterior2"|translate}}:</strong> {{ onePlayer.Clubanterior2 }}</li>
-                    <li><strong>{{"Clubanterior3"|translate}}:</strong> {{ onePlayer.Clubanterior3 }}</li>
-                    <li><strong>{{"Clubanterior4"|translate}}:</strong> {{ onePlayer.Clubanterior4 }}</li>
-                    <li><strong>{{"Clubanterior5"|translate}}:</strong> {{ onePlayer.Clubanterior5 }}</li> -->
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="rounded p-3">
-                  <h5>{{"Habilidades del jugador"|translate}}</h5>
+                  <h5>{{"Habilidadesdeljugador"|translate}}</h5>
                   <br>
                   <ul>
                     <li><strong>{{"Aceleracion"|translate}}:</strong> {{ onePlayer.Aceleracion }}</li>
