@@ -12,39 +12,38 @@
     </div>
 
     <div class="grid-item datos equipo d-flex">
-        <div class="container p-5 text-center justify-content-center">
+        <div class="container p-5 text-center justify-content-center" >
 
 
-                <div>
                     <div class="row-container pt-3 bg-light" >
                         <div class="text-center d-flex align-items-center" style="justify-content: center;">
                             <img class="escudo" src="..\assets\images\{{onePlayer.escudo1}}" style="position: relative; top: -10px;">
                             <p style="margin-left: 10px;">{{ onePlayer.Clubactual }}</p>
                         </div>
                     </div>
-                </div>
-                <div class="row-container pt-3 text-center bg-white">
+            
+                <div class="row-container pt-3 text-center bg-white" *ngIf="onePlayer.Clubanterior1">
                     <div class="text-center d-flex align-items-center" style="justify-content: center;">
                         <img class="escudo" src="..\assets\images\{{onePlayer.escudo2}}" style="position: relative; top: -10px;">
                         <p style="margin-left: 10px;">{{ onePlayer.Clubanterior1 }}</p>
                     </div>
                 </div>
 
-                <div class="row-container pt-3 text-center bg-light">
+                <div class="row-container pt-3 text-center bg-light" *ngIf="onePlayer.Clubanterior2">
                     <div class="text-center d-flex align-items-center" style="justify-content: center;">
                         <img class="escudo" src="..\assets\images\{{onePlayer.escudo3}}" style="position: relative; top: -10px;">
                         <p style="margin-left: 10px;">{{ onePlayer.Clubanterior2 }}</p>
                     </div>
                 </div>
 
-                <div class="row-container pt-3 text-center bg-white">
+                <div class="row-container pt-3 text-center bg-white"  *ngIf="onePlayer.Clubanterior3">
                     <div class="text-center d-flex align-items-center" style="justify-content: center;">
                         <img class="escudo" src="..\assets\images\{{onePlayer.escudo4}}" style="position: relative; top: -10px;">
                         <p style="margin-left: 10px;">{{ onePlayer.Clubanterior3 }}</p>
                     </div>
                 </div>
 
-                <div class="row-container pt-3 text-center bg-light">
+                <div class="row-container pt-3 text-center bg-light" *ngIf="onePlayer.Clubanterior4">
                     <div class="text-center d-flex align-items-center" style="justify-content: center;">
                         <img class="escudo" src="..\assets\images\{{onePlayer.escudo5}}" style="position: relative; top: -10px;">
                         <p style="margin-left: 10px;">{{ onePlayer.Clubanterior4 }}</p>
@@ -62,6 +61,6 @@
 <br>
 <br>
 
-<span *ngfor="let url of navigation.getHistory(); let i = index">
+<!-- <span *ngfor="let url of navigation.getHistory(); let i = index">
     {{i}}={{url}}
-</span>
+</span> -->

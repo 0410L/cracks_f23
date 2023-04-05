@@ -21,7 +21,7 @@ export class NavigationService {
 
 
   public getHistory(): string[] {
-    return this.history;
+    return this.history
   }
 
   public goBack(): void {

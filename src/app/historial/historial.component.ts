@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './historial.component.html',
   styleUrls: ['./historial.component.scss']
 })
-export class HistorialComponent {
+export class HistorialComponent implements OnInit {
 
   id : any;
   onePlayer : any;
@@ -24,11 +24,17 @@ export class HistorialComponent {
     {
     this.route.params.subscribe(params => {this.id = params['id']});
     console.log(this.id); 
-    this.onePlayer=this.playerService.getPlayerOne(this.id);
-    console.log(this.onePlayer)
+    
 
     this.setAppLang();
   }
+
+  ngOnInit(): void {
+    this.onePlayer=this.playerService.getPlayerOne(this.id);
+    console.log(this.onePlayer)
+  }
+
+  
 
   setAppLang():void{
     this.translate.setDefaultLang('es');
