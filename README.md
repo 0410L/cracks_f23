@@ -1,3 +1,3 @@
 ## cracks_f23
 
-# Deploy: cracks-f23.vercel.app
+# Deploy: https://cracks-f23.vercel.app/home
