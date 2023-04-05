@@ -1,5 +1,5 @@
 <div class="title">
-    <h3 class="text-center">Ficha <h2>{{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</h2></h3>
+    <h3 class="text-center">{{"Ficha"|translate}}<h2>{{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</h2></h3>
 </div>
 
 <div class="grid-container point">
@@ -12,55 +12,63 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="rounded p-3">
-                  <h5>Información del jugador</h5>
+                  <h5>{{"Información del jugador"|translate}}</h5>
+                  <br>
                   <ul>
-                    <li><span><strong>ID:</strong> {{ onePlayer.id }}</span></li>
-                    <li><strong>Nombre:</strong> {{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</li>
-                    <li><strong>Edad:</strong> {{ onePlayer.Edad }}</li>
-                    <li><strong>Nacionalidad:</strong> {{ onePlayer.Nacionalidad }}</li>
-                    <li><strong>Club actual:</strong> {{ onePlayer.Club_actual }}</li>
-                    <li><strong>Club anterior 1:</strong> {{ onePlayer.Club_anterior_1 }}</li>
-                    <li><strong>Club anterior 2:</strong> {{ onePlayer.Club_anterior_2 }}</li>
-                    <li><strong>Club anterior 3:</strong> {{ onePlayer.Club_anterior_3 }}</li>
-                    <li><strong>Club anterior 4:</strong> {{ onePlayer.Club_anterior_4 }}</li>
-                    <li><strong>Club anterior 5:</strong> {{ onePlayer.Club_anterior_5 }}</li>
+                    <li><span><strong>{{"ID"}}:</strong> {{ onePlayer.id }}</span></li>
+                    <li><strong>{{"Nombre"|translate}}:</strong> {{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</li>
+                    <li><strong>{{"Edad"|translate}}:</strong> {{ onePlayer.Edad }}</li>
+                    <li><strong>{{"Nacionalidad"|translate}}:</strong> {{ onePlayer.Nacionalidad }}</li>
+                    <li><strong>{{"Clubactual"|translate}}:</strong> {{ onePlayer.Clubactual }}</li>
+                    <!-- <li><strong>{{"Clubanterior1"|translate}}:</strong> {{ onePlayer.Clubanterior1 }}</li>
+                    <li><strong>{{"Clubanterior2"|translate}}:</strong> {{ onePlayer.Clubanterior2 }}</li>
+                    <li><strong>{{"Clubanterior3"|translate}}:</strong> {{ onePlayer.Clubanterior3 }}</li>
+                    <li><strong>{{"Clubanterior4"|translate}}:</strong> {{ onePlayer.Clubanterior4 }}</li>
+                    <li><strong>{{"Clubanterior5"|translate}}:</strong> {{ onePlayer.Clubanterior5 }}</li> -->
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="rounded p-3">
-                  <h5>Habilidades del jugador</h5>
+                  <h5>{{"Habilidades del jugador"|translate}}</h5>
+                  <br>
                   <ul>
-                    <li><strong>Aceleración:</strong> {{ onePlayer.Aceleracion }}</li>
-                    <li><strong>Velocidad:</strong> {{ onePlayer.Velocidad }}</li>
-                    <li><strong>Posición:</strong> {{ onePlayer.Posicion }}</li>
-                    <li><strong>Finalización:</strong> {{ onePlayer.Finalizacion }}</li>
-                    <li><strong>Potencia de tiro:</strong> {{ onePlayer.Potencia_de_tiro }}</li>
-                    <li><strong>Tiros lejanos:</strong> {{ onePlayer.Tiros_lejanos }}</li>
-                    <li><strong>Voleas:</strong> {{ onePlayer.Voleas }}</li>
-                    <li><strong>Penaltis:</strong> {{ onePlayer.Penaltis }}</li>
-                    <li><strong>Visión de juego:</strong> {{ onePlayer.Vision_de_juego }}</li>
-                    <li><strong>Centros:</strong> {{ onePlayer.Centros }}</li>
-                    <li><strong>Precisión tirando faltas:</strong> {{ onePlayer.Precision_tirando_faltas }}</li>
-                    <li><strong>Pases cortos:</strong> {{ onePlayer.Pases_cortos }}</li>
-                    <li><strong>Pases largos:</strong> {{ onePlayer.Pases_largos }}</li>
-                    <li><strong>Efecto:</strong> {{ onePlayer.Efecto }}</li>
-                    <li><strong>Agilidad:</strong> {{ onePlayer.Agilidad }}</li>
-                    <li><strong>Equilibrio:</strong> {{ onePlayer.Equilibrio }}</li>
-                    <li><strong>Reacción:</strong> {{ onePlayer.Reaccion }}</li>
-                    <li><strong>Control del balón:</strong> {{ onePlayer.Control_del_Balon }}</li>
-                    <li><strong>Regates:</strong> {{ onePlayer.Regates }}</li>
-                    <li><strong>Compostura:</strong> {{ onePlayer.Compostura }}</li>
+                    <li><strong>{{"Aceleracion"|translate}}:</strong> {{ onePlayer.Aceleracion }}</li>
+                    <li><strong>{{"Velocidad"|translate}}:</strong> {{ onePlayer.Velocidad }}</li>
+                    <li><strong>{{"Posicion"|translate}}:</strong> {{ onePlayer.Posicion }}</li>
+                    <li><strong>{{"Finalizacion"|translate}}:</strong> {{ onePlayer.Finalizacion }}</li>
+                    <li><strong>{{"Potenciadetiro"|translate}}:</strong> {{ onePlayer.Potenciadetiro }}</li>
+                    <li><strong>{{"Tiroslejanos"|translate}}:</strong> {{ onePlayer.Tiroslejanos }}</li>
+                    <li><strong>{{"Voleas"|translate}}:</strong> {{ onePlayer.Voleas }}</li>
+                    <li><strong>{{"Penaltis"|translate}}:</strong> {{ onePlayer.Penaltis }}</li>
+                    <li><strong>{{"Visiondejuego"|translate}}:</strong> {{ onePlayer.Visiondejuego }}</li>
+                    <li><strong>{{"Centros"|translate}}:</strong> {{ onePlayer.Centros }}</li>
+                    <li><strong>{{"Precisiontirandofaltas"|translate}}:</strong> {{ onePlayer.Precisiontirandofaltas }}</li>
+                    <li><strong>{{"Pasescortos"|translate}}:</strong> {{ onePlayer.Pasescortos }}</li>
+                    <li><strong>{{"Paseslargos"|translate}}:</strong> {{ onePlayer.Paseslargos }}</li>
+                    <li><strong>{{"Efecto"|translate}}:</strong> {{ onePlayer.Efecto }}</li>
+                    <li><strong>{{"Agilidad"|translate}}:</strong> {{ onePlayer.Agilidad }}</li>
+                    <li><strong>{{"Equilibrio"|translate}}:</strong> {{ onePlayer.Equilibrio }}</li>
+                    <li><strong>{{"Reaccion"|translate}}:</strong> {{ onePlayer.Reaccion }}</li>
+                    <li><strong>{{"ControldelBalon"|translate}}:</strong> {{ onePlayer.ControldelBalon }}</li>
+                    <li><strong>{{"Regates"|translate}}:</strong> {{ onePlayer.Regates }}</li>
+                    <li><strong>{{"Compostura"|translate}}:</strong> {{ onePlayer.Compostura }}</li>
                   </ul>
               </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 <div class="text-center mt-1 mb-2">
-    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">Retroceder</button>
-    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goNext()">Videos</button>
+    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">{{"Retroceder"|translate}}</button>
+    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goNext()">{{"Videos"|translate}}</button>
 </div>
 
-
-<!-- <span *ngfor="let url of navigation.getHistory(); let i = index">
-    {{i}}={{url}}
-</span> -->
+<br>
+<br>
