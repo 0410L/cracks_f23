@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { NavigationService } from 'src/app/navigation.service';
-import * as json from 'data.json';
+// import * as json from 'data.json';
 
 
 @Component({
@@ -35,6 +35,6 @@ export class HeaderComponent {
     this.translateservice.use(language)
   }
 
-  es = json;
+  // es = json;
 
 }

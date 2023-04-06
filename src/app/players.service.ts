@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { TranslateService } from '@ngx-translate/core';
 import { map } from 'rxjs/operators';
 import { Data } from './interface.data';
-import * as json from 'data.json';
+// import * as json from 'data.json';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PlayersService {
-private url = 'data.json';
+private url = '';
   public data: Data = {
     players: [],
     id: '0',
@@ -57,18 +56,19 @@ private url = 'data.json';
     YoutubeVideo1: '',
     YoutubeVideo2: '',
     YoutubeVideo3: '',
-    YoutubeVideo4: ''
+    YoutubeVideo4: '',
+    Mensaje: ''
   };
 
   id: any;
-  es = json;
+  // es = json;
 
   constructor(private http: HttpClient) {
     this.getPlayers();
   }
 
   getPlayers(): void {
-    if (this.data.length < 1) {
+    if (this.data.length > 0) {
       this.http
         .get(this.url)
         .pipe(map((response: any) => response.players))
@@ -80,7 +80,7 @@ private url = 'data.json';
   }
 
   getPlayerOne(id: any) {
-    console.log(id);
+    // console.log(id);
    
     const test = this.players[id-1]
     console.log(test)
@@ -142,6 +142,7 @@ private url = 'data.json';
       escudo4:'LEGIA.png',
       escudo5:'LECHPOZNAN.png',
       url: 'LEWAN_F23.webp',
+      Mensaje: '¡Hola soy Lewan!'
     },
 
     {
@@ -198,6 +199,7 @@ private url = 'data.json';
       escudo4:'0.png',
       escudo5:'0.png',
       url: 'NEYMAR_F23.webp',
+      Mensaje: '¡Hola soy Ney!'
     },
 
     {
@@ -254,6 +256,7 @@ private url = 'data.json';
       escudo4:'VALENCIA.png',
       escudo5:'BETIS.png',
       url: 'JOAQUIN_F23.webp',
+      Mensaje: '¡Qué pasa pisha!'
     },
     {
       id: '4',
@@ -309,6 +312,7 @@ private url = 'data.json';
       escudo4:'REALSOCIEDAD.png',
       escudo5:'0.png',
       url: 'GRIEZMANN_F23.webp',
+      Mensaje: '¡Hola soy Antoine!'
     },
   ];
 }

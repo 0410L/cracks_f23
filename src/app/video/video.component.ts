@@ -24,10 +24,10 @@ export class VideoComponent {
     public translate: TranslateService) {
 
     this.route.params.subscribe(params => {this.id = params['id']});
-    console.log(this.id);
+    // console.log(this.id);
 
     this.onePlayer=this.playerService.getPlayerOne(this.id);
-    console.log(this.onePlayer)
+    // console.log(this.onePlayer)
 
     this.setAppLang();
 
@@ -41,9 +41,9 @@ export class VideoComponent {
   goBack() {
     this.location.back();
   }
-  goNext(){
-    this.router.navigate(['home/historial/'+(this.id)])
-  }
+  // goNext(){
+  //   this.router.navigate(['players/'+(this.id)+'/video/historial'])
+  // }
 
 
 }

@@ -1,8 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NavigationService } from 'src/app/navigation.service';
-import { ActivatedRoute, Router } from '@angular/router';
-import { PlayersService } from '../players.service';
-import { Data } from '../interface.data';
 import { TranslateService } from '@ngx-translate/core';
 
 
@@ -17,7 +14,6 @@ export class HomeComponent implements OnInit{
 
   constructor (
     public navigation: NavigationService,
-    private router: Router,
     public translate: TranslateService)
     {
     
