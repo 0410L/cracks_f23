@@ -66,6 +66,18 @@
     background: rgb(253, 253, 253);
     animation: flash 1.5s linear infinite;
   }
+
+  .photo {
+    max-width: 600px;
+    max-height: 600px
+  }
+
+  .shield {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+
   
   @keyframes flash {
     0% { background: rgb(255, 255, 255); 
@@ -80,5 +92,14 @@
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+  .photo {
+    max-width: 400px;
+    max-height: 400px
+  }
+
+  .shield {
+    max-width: 400px;
+    max-height: 300px;
   }
 }
