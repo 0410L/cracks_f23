@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PlayersService } from '../players.service';
-import { Data } from '../interface.data';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -14,8 +13,6 @@ export class PlayersComponent {
   id : any;
   onePlayer : any;
 
-  // Players : Data[]=[];
-
   constructor(
     public location: Location,
     public router: Router,
@@ -23,14 +20,12 @@ export class PlayersComponent {
     public playerService : PlayersService,
     public translate: TranslateService) 
     {
-
-    // this.Players=playerService.getPlayers();
       
     this.route.params.subscribe(params => {this.id = params['id']});
-    console.log(this.id);
+    // console.log(this.id);
 
     this.onePlayer=this.playerService.getPlayerOne(this.id);
-    console.log(this.onePlayer)
+    //console.log(this.onePlayer)
 
     this.setAppLang();
   }
@@ -43,9 +38,9 @@ export class PlayersComponent {
   goBack() {
     this.location.back();
   }
-  goNext(){
-    this.router.navigate(['home/video/'+(this.id)])
-  }
+  // goNext(){
+  //   this.router.navigate(['players/'+(this.id)+'/video/'])
+  // }
 
 }
 

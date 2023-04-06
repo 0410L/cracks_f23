@@ -19,13 +19,9 @@
 
 <div class="text-center mt-1 mb-2">
   <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">{{"Retroceder"|translate}}</button>
-  <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goNext()">{{"Historial"|translate}}</button>
+  <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" routerLink="historial">{{"Historial"|translate}}</button>
 </div>
  
-
 <br>
 <br>
-<span *ngfor="let url of navigation.getHistory(); let i = index">
-    {{i}}={{url}}
-</span>
 

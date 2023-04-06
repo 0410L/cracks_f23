@@ -52,7 +52,7 @@
   }
 
   .title{
-    margin-top: 120px;
+    margin-top: 60px;
   }
 
   img{
@@ -61,6 +61,9 @@
     height: 90%;
   }
 
+  .bocadillo:hover:after {
+    display: none;
+  }
   
 
 @media (max-width: 820px) {
