@@ -47,4 +47,5 @@ export interface Data {
     YoutubeVideo3: string;
     YoutubeVideo4: string;
     Mensaje: string,
+    Mensaje2: string,
 }

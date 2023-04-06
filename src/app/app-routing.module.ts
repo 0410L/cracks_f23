@@ -28,7 +28,7 @@ const routes: Routes = [
       {
         path: '',
         data: {
-          breadcrumb: null,
+          breadcrumb: '',
         },
         component: HomeComponent,
       },

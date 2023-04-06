@@ -57,7 +57,8 @@ private url = '';
     YoutubeVideo2: '',
     YoutubeVideo3: '',
     YoutubeVideo4: '',
-    Mensaje: ''
+    Mensaje: '',
+    Mensaje2: '',
   };
 
   id: any;
@@ -142,7 +143,8 @@ private url = '';
       escudo4:'LEGIA.png',
       escudo5:'LECHPOZNAN.png',
       url: 'LEWAN_F23.webp',
-      Mensaje: '¡Hola soy Lewan!'
+      Mensaje: '¡Hola soy Lewan!',
+      Mensaje2: 'Ve mis videos!'
     },
 
     {
@@ -199,7 +201,8 @@ private url = '';
       escudo4:'0.png',
       escudo5:'0.png',
       url: 'NEYMAR_F23.webp',
-      Mensaje: '¡Hola soy Ney!'
+      Mensaje: '¡Hola soy Ney!',
+      Mensaje2: 'Vem ver meus vídeos!'
     },
 
     {
@@ -256,7 +259,8 @@ private url = '';
       escudo4:'VALENCIA.png',
       escudo5:'BETIS.png',
       url: 'JOAQUIN_F23.webp',
-      Mensaje: '¡Qué pasa pisha!'
+      Mensaje: '¡Qué pasa pisha!',
+      Mensaje2: '¡Mira que arte!'
     },
     {
       id: '4',
@@ -312,7 +316,8 @@ private url = '';
       escudo4:'REALSOCIEDAD.png',
       escudo5:'0.png',
       url: 'GRIEZMANN_F23.webp',
-      Mensaje: '¡Hola soy Antoine!'
+      Mensaje: '¡Hola soy Antoine!',
+      Mensaje2: 'Visionne mes vidéos !'
     },
   ];
 }
