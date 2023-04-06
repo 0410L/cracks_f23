@@ -3,7 +3,7 @@
 App 'my four' favourite football player
 
 ## 💻 Deploy project 💻
-https://cracks-f23.vercel.app/home
+https://cracks-f23.vercel.app/
 
 ## ⬇ Install ⬇
 'npm i' in console (or cmd) if exists something problem try with 'npm install --force'
