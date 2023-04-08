@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./players.component.scss']
 })
 export class PlayersComponent {
-  id : any;
+  id : number = 0;
   onePlayer : any;
 
   constructor(
@@ -38,9 +38,19 @@ export class PlayersComponent {
   goBack() {
     this.location.back();
   }
-  // goNext(){
-  //   this.router.navigate(['players/'+(this.id)+'/video/'])
-  // }
+ 
+  ngOnInit() {
+    const language = localStorage.getItem('language');
+    if (language) {
+      this.translate.use(language);
+    } else {
+      this.translate.setDefaultLang('es');
+    }
+  }
 
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    localStorage.setItem('language', language);
+  }
 }
 
