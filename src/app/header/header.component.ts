@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { NavigationService } from 'src/app/navigation.service';
 // import * as json from 'data.json';
 
 
@@ -11,30 +10,19 @@ import { NavigationService } from 'src/app/navigation.service';
 })
 export class HeaderComponent {
 
-    constructor (public translateservice : TranslateService){
-    translateservice.setDefaultLang('es');
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {
+    const language = localStorage.getItem('language');
+    if (language) {
+      this.translate.use(language);
+    } else {
+      this.translate.setDefaultLang('es');
+    }
   }
 
-  switchEnglish(language: string){
-    this.translateservice.use(language)
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    localStorage.setItem('language', language);
   }
-
-  switchSpain(language: string){
-    this.translateservice.use(language)
-  }
-
-  switchCatala(language: string){
-    this.translateservice.use(language)
-  }
-
-  switchFrench(language: string){
-    this.translateservice.use(language)
-  }
-
-  switchJapanese(language: string){
-    this.translateservice.use(language)
-  }
-
-  // es = json;
-
 }

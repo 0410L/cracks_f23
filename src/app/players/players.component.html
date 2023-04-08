@@ -8,58 +8,187 @@
         <img src="../assets/images/{{onePlayer.url}}" routerLink="video"  title="{{ onePlayer.Mensaje2 }}" style="max-width: 500px; max-height: 500px; cursor: pointer">
     </div>
     <div class="grid-item cardfifa">
-        <div class="container ">
+        <div class="container">
+          <h5 class="text-center">{{"Habilidadesdeljugador"|translate}}</h5>
             <div class="row">
+              
               <div class="col-md-6">
                 <div class="rounded p-3">
-                  <h5>{{"Informaciondeljugador"|translate}}</h5>
+                  <div class="pt-1">
+                    <span class="fw-bold">{{"Aceleracion"|translate}}:</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Aceleracion" [attr.aria-valuenow]="onePlayer.Aceleracion" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Aceleracion }}</div>
+                    </div>
+                  </div>
+
+                  <div class="pt-1">
+                    <span class="fw-bold">{{"Velocidad"|translate}}:</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Velocidad" [attr.aria-valuenow]="onePlayer.Velocidad" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Velocidad }}</div>
+                    </div>
+                  </div>
+
+                  <div class="pt-1">
+                    <span class="fw-bold">{{"Posicion"|translate}}:</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Posicion" [attr.aria-valuenow]="onePlayer.Posicion" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Posicion }}</div>
+                    </div>
+                  </div>
+
+                  <div class="pt-1">
+                    <span class="fw-bold">{{"Finalizacion"|translate}}:</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Finalizacion" [attr.aria-valuenow]="onePlayer.Finalizacion" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Finalizacion }}</div>
+                    </div>
+                  </div>
+
+                  <div class="pt-1">
+                    <span class="fw-bold">{{"Potenciadetiro"|translate}}:</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Potenciadetiro" [attr.aria-valuenow]="onePlayer.Potenciadetiro" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Potenciadetiro }}</div>
+                    </div>
+                  </div>
+
+                  <div class="pt-1">
+                    <span class="fw-bold">{{"Tiroslejanos"|translate}}:</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Tiroslejanos" [attr.aria-valuenow]="onePlayer.Tiroslejanos" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Tiroslejanos }}</div>
+                    </div>
+                  </div>
+                  
+                  <div class="pt-1">
+                    <span class="fw-bold">{{"Voleas"|translate}}:</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Voleas" [attr.aria-valuenow]="onePlayer.Voleas" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Voleas }}</div>
+                    </div>
+                  </div>
+
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Penaltis"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Penaltis" [attr.aria-valuenow]="onePlayer.Penaltis" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Penaltis }}</div>
+                  </div>
+                </div>
+                
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Visiondejuego"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Visiondejuego" [attr.aria-valuenow]="onePlayer.Visiondejuego" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Visiondejuego }}</div>
+                  </div>
+                </div>
+
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Centros"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Centros" [attr.aria-valuenow]="onePlayer.Centros" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Centros }}</div>
+                  </div>
+                </div>
+                </div>
+              
+              </div>
+
+              <div class="col-md-6">
+
+                <div class="rounded p-3">
+                  
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Precisiontirandofaltas"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Precisiontirandofaltas" [attr.aria-valuenow]="onePlayer.Precisiontirandofaltas" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Precisiontirandofaltas }}</div>
+                  </div>
+                </div>
+                   
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Pasescortos"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Pasescortos" [attr.aria-valuenow]="onePlayer.Pasescortos" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Pasescortos }}</div>
+                  </div>
+                </div>
+                       
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Paseslargos"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Paseslargos" [attr.aria-valuenow]="onePlayer.Paseslargos" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Paseslargos }}</div>
+                  </div>
+                </div>
+                         
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Paseslargos"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Paseslargos" [attr.aria-valuenow]="onePlayer.Paseslargos" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Paseslargos }}</div>
+                  </div>
+                </div>
+         
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Efecto"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Efecto" [attr.aria-valuenow]="onePlayer.Efecto" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Efecto }}</div>
+                  </div>
+                </div>
+
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Agilidad"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Agilidad" [attr.aria-valuenow]="onePlayer.Agilidad" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Agilidad }}</div>
+                  </div>
+                </div>
+                
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Equilibrio"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Equilibrio" [attr.aria-valuenow]="onePlayer.Equilibrio" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Equilibrio }}</div>
+                  </div>
+                </div>
+                
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Reaccion"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Reaccion" [attr.aria-valuenow]="onePlayer.Reaccion" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Reaccion }}</div>
+                  </div>
+                </div>
+
+                <div class="pt-1">
+                  <span class="fw-bold">{{"ControldelBalon"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.ControldelBalon" [attr.aria-valuenow]="onePlayer.ControldelBalon" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.ControldelBalon }}</div>
+                  </div>
+                </div>
+
+                <div class="pt-1">
+                  <span class="fw-bold">{{"Regates"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Regates" [attr.aria-valuenow]="onePlayer.Regates" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Regates }}</div>
+                  </div>
+                </div>
+
+                <!-- <div class="pt-1">
+                  <span class="fw-bold">{{"Compostura"|translate}}:</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" [style.width.%]="onePlayer.Compostura" [attr.aria-valuenow]="onePlayer.Compostura" aria-valuemin="0" aria-valuemax="100">{{ onePlayer.Compostura }}</div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+<div class="text-center mt-1 mb-2">
+    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">{{"Retroceder"|translate}}</button>
+    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" routerLink="video">{{"Videos"|translate}}</button>
+</div>
+<br>
+<br>
+<br>
+
+
+<!-- <h5>{{"Informaciondeljugador"|translate}}</h5>
                   <br>
                   <ul>
                     <li><strong>{{"Nombre"|translate}}:</strong> {{ onePlayer.Nombre }} {{ onePlayer.Apellido }}</li>
                     <li><strong>{{"Edad"|translate}}:</strong> {{ onePlayer.Edad }}</li>
                     <li><strong>{{"Nacionalidad"|translate}}:</strong> {{ onePlayer.Nacionalidad }}</li>
                     <li><strong>{{"Clubactual"|translate}}:</strong> {{ onePlayer.Clubactual }}</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="rounded p-3">
-                  <h5>{{"Habilidadesdeljugador"|translate}}</h5>
-                  <br>
-                  <ul>
-                    <li><strong>{{"Aceleracion"|translate}}:</strong> {{ onePlayer.Aceleracion }}</li>
-                    <li><strong>{{"Velocidad"|translate}}:</strong> {{ onePlayer.Velocidad }}</li>
-                    <li><strong>{{"Posicion"|translate}}:</strong> {{ onePlayer.Posicion }}</li>
-                    <li><strong>{{"Finalizacion"|translate}}:</strong> {{ onePlayer.Finalizacion }}</li>
-                    <li><strong>{{"Potenciadetiro"|translate}}:</strong> {{ onePlayer.Potenciadetiro }}</li>
-                    <li><strong>{{"Tiroslejanos"|translate}}:</strong> {{ onePlayer.Tiroslejanos }}</li>
-                    <li><strong>{{"Voleas"|translate}}:</strong> {{ onePlayer.Voleas }}</li>
-                    <li><strong>{{"Penaltis"|translate}}:</strong> {{ onePlayer.Penaltis }}</li>
-                    <li><strong>{{"Visiondejuego"|translate}}:</strong> {{ onePlayer.Visiondejuego }}</li>
-                    <li><strong>{{"Centros"|translate}}:</strong> {{ onePlayer.Centros }}</li>
-                    <li><strong>{{"Precisiontirandofaltas"|translate}}:</strong> {{ onePlayer.Precisiontirandofaltas }}</li>
-                    <li><strong>{{"Pasescortos"|translate}}:</strong> {{ onePlayer.Pasescortos }}</li>
-                    <li><strong>{{"Paseslargos"|translate}}:</strong> {{ onePlayer.Paseslargos }}</li>
-                    <li><strong>{{"Efecto"|translate}}:</strong> {{ onePlayer.Efecto }}</li>
-                    <li><strong>{{"Agilidad"|translate}}:</strong> {{ onePlayer.Agilidad }}</li>
-                    <li><strong>{{"Equilibrio"|translate}}:</strong> {{ onePlayer.Equilibrio }}</li>
-                    <li><strong>{{"Reaccion"|translate}}:</strong> {{ onePlayer.Reaccion }}</li>
-                    <li><strong>{{"ControldelBalon"|translate}}:</strong> {{ onePlayer.ControldelBalon }}</li>
-                    <li><strong>{{"Regates"|translate}}:</strong> {{ onePlayer.Regates }}</li>
-                    <li><strong>{{"Compostura"|translate}}:</strong> {{ onePlayer.Compostura }}</li>
-                  </ul>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<div class="text-center mt-1 mb-2">
-    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" (click)="goBack()">{{"Retroceder"|translate}}</button>
-    <button class="btn btn-secondary btn-sm text-center m-2"  style="justify-content: center;" routerLink="video">{{"Videos"|translate}}</button>
-</div>
-
-<br>
-<br>
+                  </ul> -->

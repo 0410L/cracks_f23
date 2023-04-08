@@ -30,6 +30,12 @@ export class HistorialComponent implements OnInit {
 
   ngOnInit(): void {
     this.onePlayer=this.playerService.getPlayerOne(this.id);
+    const language = localStorage.getItem('language');
+    if (language) {
+      this.translate.use(language);
+    } else {
+      this.translate.setDefaultLang('es');
+    }
     // console.log(this.onePlayer)
   }
 
@@ -41,6 +47,12 @@ export class HistorialComponent implements OnInit {
 
   goBack() {
     this.location.back();
+  }
+
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    localStorage.setItem('language', language);
   }
 
 }
