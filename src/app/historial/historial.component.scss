@@ -5,6 +5,17 @@
   }
 
 
+  
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
