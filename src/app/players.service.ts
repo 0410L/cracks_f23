@@ -80,7 +80,7 @@ private url = '';
     }
   }
 
-  getPlayerOne(id: any) {
+  getPlayerOne(id: number) {
     // console.log(id);
    
     const test = this.players[id-1]

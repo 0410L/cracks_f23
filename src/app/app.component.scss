@@ -18,3 +18,16 @@
     width: 100%;
     z-index: 3;
 }
+
+.background{
+    background: linear-gradient(
+      to bottom,
+      #b4b4b4,
+      #b4b4b4 50%,
+      #d1d1d1 50%,
+      #cbcbcb
+    );
+    /* The rectangle in which to repeat. 
+       It can be fully wide in this case */
+    background-size: 100% 20px;
+  }
